@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import Logo from '../../assets/svg//mexico-marino-logo.svg';
+import SearchIcon from '../../assets/svg/icons8-search.svg';
 
 import './navbar.styles.scss';
 
@@ -19,7 +20,9 @@ const Navbar = () => {
             <div className='register-btn'>ANÚNCIATE AQUÍ</div>
             <div className='search-bar'> 
               <div className='search-input'> Search Bar </div>
-              <div className='search-btn'> o </div>
+              <div className='search-btn'> 
+                <SearchIcon className='search-icon'/> 
+              </div>
             </div>
             <div className='login-btn'>
               <span> O </span>
@@ -27,7 +30,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className='navbar-links'>
-            <div>EMBARCATIONES</div>
+            <div> <SearchIcon className='search-icon'/> EMBARCATIONES</div>
             <div>DISTRIBUDORES</div>
             <div>PRODUCTOS</div>
             <div>CLIMA</div>

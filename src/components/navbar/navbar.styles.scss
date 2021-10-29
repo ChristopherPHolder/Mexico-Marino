@@ -14,7 +14,6 @@ header {
         height: 80px;
         width: 220px;
         padding-left: 15px;
-        
       }
     }
 
@@ -35,12 +34,13 @@ header {
 
         .register-btn {
           background-color: #FFD200;
-          font-weight: bolder;
+          font-weight: bold;
           font-size: 16px;
           text-align: center;
           color: #122562;
-          padding: 10px 20px 10px 20px;
+          padding: 8px 20px 8px 20px;
           border-radius: 8px;
+          text-shadow: 0px 0px 1px var(#122562);
         }
 
         .search-bar {
@@ -57,8 +57,17 @@ header {
 
           .search-btn {
             background-color: #FFD200;
-            padding: 8px 10px 8px 10px;
+            padding: 7px 10px 3px 10px;
             border-radius: 0 8px 8px 0;
+
+            .search-icon {
+              height: 20px;
+              width: 20px;
+              stroke: #122562;
+              fill: #122562;
+              vertical-align: middle;
+              stroke-width: 3;
+            }
           }
         }
 
@@ -73,7 +82,16 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 14px;
+        font-size: 15px;
+
+        .search-icon {
+          height: 16px;
+          width: 16px;
+          stroke: white;
+          fill: white;
+          vertical-align: bottom;
+          stroke-width: 3;
+        }
       }
     }
   }

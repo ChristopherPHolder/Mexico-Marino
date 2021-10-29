@@ -6,6 +6,7 @@ import GeneralSearchBar from '../general-search-bar/general-search-bar.component
 
 import Logo from '../../assets/svg//mexico-marino-logo.svg';
 import SearchIcon from '../../assets/svg/icons8-search.svg';
+import LoginIcon from '../../assets/svg/icon-circle-user.svg';
 
 import './navbar.styles.scss';
 
@@ -23,8 +24,8 @@ const Navbar = () => {
             <GeneralButton buttonText='ANÚNCIATE AQUÍ' />
             <GeneralSearchBar />
             <div className='login-btn'>
-              <span> O </span>
-              <span> Log In </span>
+              <LoginIcon className='login-icon'/>
+              <span> ACCESSO DE USUARIO </span>
             </div>
           </div>
           <div className='navbar-links'>

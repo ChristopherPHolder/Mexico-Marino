@@ -31,34 +31,6 @@ header {
         margin-left: auto;
         justify-content: space-between;
         align-items: center;
-
-        .login-btn {
-          color: white;
-          border: #FFD200;
-          border-style: solid;
-          padding: 5px 10px 5px 10px;
-          border-width: 2px;
-          border-radius: 10px;
-          font-weight: 500;
-          
-          .login-icon {
-            vertical-align: bottom;
-            padding-right: 15px;
-            fill: white;
-            stroke: none;
-          }
-        }
-
-        .login-btn:hover {
-          background-color: #FFD200;
-          color: #122562;
-          text-shadow: 0px 0px 2px #122562;
-
-          .login-icon {
-            fill: #122562;
-            stroke: #122562;
-          }
-        }
       }
 
       .navbar-links {

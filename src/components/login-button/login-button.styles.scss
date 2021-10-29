@@ -1,0 +1,33 @@
+.login-btn {
+  font-size: 16px;
+  color: white;
+  border: #FFD200;
+  border-style: solid;
+  padding: 6px 20px 6px 20px;
+  border-width: 2px;
+  border-radius: 10px;
+  font-weight: 500;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+  
+  .login-icon {
+    vertical-align: bottom;
+    padding-right: 15px;
+    fill: white;
+    stroke: none;
+  }
+}
+
+.login-btn:hover {
+  background-color: #FFD200;
+  color: #122562;
+  text-shadow: 0px 0px 2px #122562;
+  cursor: pointer;
+
+  .login-icon {
+    fill: #122562;
+    stroke: #122562;
+  }
+}

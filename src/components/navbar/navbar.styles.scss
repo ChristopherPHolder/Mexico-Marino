@@ -1,0 +1,80 @@
+header {
+  nav {
+    padding: 20px;
+    max-width: 1400px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    
+    .navbar-logo-container {
+      width: 25%;
+      height: 80px;
+      
+      .navbar-logo {
+        height: 80px;
+        width: 220px;
+        padding-left: 15px;
+        
+      }
+    }
+
+    .navbar-options {
+      height: 80px;
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .navbar-actions {
+        height: 100%;
+        width: 95%;
+        display: flex;
+        margin-left: auto;
+        justify-content: space-between;
+        align-items: center;
+
+        .register-btn {
+          background-color: #FFD200;
+          font-weight: bolder;
+          font-size: 16px;
+          text-align: center;
+          color: #122562;
+          padding: 10px 20px 10px 20px;
+          border-radius: 8px;
+        }
+
+        .search-bar {
+          background-color: whitesmoke;
+          width: 40%;
+          border-radius: 8px;
+          display: flex;
+          justify-content: space-between;
+
+          .search-input {
+            color: #838282;
+            padding: 8px 10px 8px 10px;
+          }
+
+          .search-btn {
+            background-color: #FFD200;
+            padding: 8px 10px 8px 10px;
+            border-radius: 0 8px 8px 0;
+          }
+        }
+
+        .login-btn {
+          color: white;
+        }
+      }
+
+      .navbar-links {
+        height: 100%;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+      }
+    }
+  }
+}

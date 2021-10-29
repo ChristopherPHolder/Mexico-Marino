@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import GeneralButton from '../general-button/general-button.component';
+import GeneralSearchBar from '../general-search-bar/general-search-bar.component';
 
 import Logo from '../../assets/svg//mexico-marino-logo.svg';
 import SearchIcon from '../../assets/svg/icons8-search.svg';
@@ -20,12 +21,7 @@ const Navbar = () => {
         <div className='navbar-options'>
           <div className='navbar-actions'>
             <GeneralButton buttonText='ANÚNCIATE AQUÍ' />
-            <div className='search-bar'> 
-              <div className='search-input'> Search Bar </div>
-              <div className='search-btn'> 
-                <SearchIcon className='search-icon'/> 
-              </div>
-            </div>
+            <GeneralSearchBar />
             <div className='login-btn'>
               <span> O </span>
               <span> Log In </span>

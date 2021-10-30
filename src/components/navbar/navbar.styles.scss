@@ -32,24 +32,6 @@ header {
         justify-content: space-between;
         align-items: center;
       }
-
-      .navbar-links {
-        height: 100%;
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 15px;
-
-        .search-icon {
-          height: 16px;
-          width: 16px;
-          stroke: white;
-          fill: white;
-          vertical-align: bottom;
-          stroke-width: 3;
-        }
-      }
     }
   }
 }

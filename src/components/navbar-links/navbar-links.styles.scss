@@ -1,0 +1,28 @@
+.navbar-links {
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+
+  .search-icon {
+    height: 16px;
+    width: 16px;
+    stroke: white;
+    fill: white;
+    vertical-align: middle;
+    padding-right: 5px;
+    stroke-width: 3;
+  }
+
+  .navbar-link:hover {
+    color: #FFD200;
+    cursor: pointer;
+    
+    .search-icon {
+      stroke: #FFD200;
+      fill: #FFD200;
+    }
+  }
+}

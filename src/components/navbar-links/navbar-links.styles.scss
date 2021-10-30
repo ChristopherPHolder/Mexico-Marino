@@ -1,6 +1,8 @@
+@import '../../assets/styles/global.styles.scss';
+
 .navbar-links {
   height: 100%;
-  color: white;
+  color: $text-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,20 +11,20 @@
   .search-icon {
     height: 16px;
     width: 16px;
-    stroke: white;
-    fill: white;
+    stroke: $text-color;
+    fill: $text-color;
     vertical-align: middle;
     padding-right: 5px;
     stroke-width: 3;
   }
 
   .navbar-link:hover {
-    color: #FFD200;
+    color: $main-color;
     cursor: pointer;
-    
+
     .search-icon {
-      stroke: #FFD200;
-      fill: #FFD200;
+      stroke: $main-color;
+      fill: $main-color;
     }
   }
 }

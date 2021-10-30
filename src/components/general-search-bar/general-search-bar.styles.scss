@@ -1,3 +1,5 @@
+@import '../../assets/styles/global.styles.scss';
+
 .search-bar {
   background-color: whitesmoke;
   width: 40%;
@@ -11,15 +13,15 @@
   }
 
   .search-btn {
-    background-color: #FFD200;
+    background-color: $main-color;
     padding: 7px 10px 3px 10px;
     border-radius: 0 8px 8px 0;
 
     .search-icon {
       height: 20px;
       width: 20px;
-      stroke: #122562;
-      fill: #122562;
+      stroke: $base-color;
+      fill: $base-color;
       vertical-align: middle;
       stroke-width: 3;
     }

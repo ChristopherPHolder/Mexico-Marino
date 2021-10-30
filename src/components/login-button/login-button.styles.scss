@@ -1,7 +1,9 @@
+@import '../../assets/styles/global.styles.scss';
+
 .login-btn {
   font-size: 16px;
-  color: white;
-  border: #FFD200;
+  color: $text-color;
+  border: $main-color;
   border-style: solid;
   padding: 6px 20px 6px 20px;
   border-width: 2px;
@@ -15,19 +17,19 @@
   .login-icon {
     vertical-align: bottom;
     padding-right: 15px;
-    fill: white;
+    fill: $text-color;
     stroke: none;
   }
 }
 
 .login-btn:hover {
-  background-color: #FFD200;
-  color: #122562;
-  text-shadow: 0px 0px 2px #122562;
+  background-color: $main-color;
+  color: $base-color;
+  text-shadow: 0px 0px 2px $base-color;
   cursor: pointer;
 
   .login-icon {
-    fill: #122562;
-    stroke: #122562;
+    fill: $base-color;
+    stroke: $base-color;
   }
 }

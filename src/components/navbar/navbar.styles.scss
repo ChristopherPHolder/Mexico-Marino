@@ -1,5 +1,9 @@
 header {
-  nav {
+  .navbar-desktop {
+    @media (max-width: 1000px) {
+      display: none;
+    }
+
     padding: 20px;
     max-width: 1400px;
     display: flex;
@@ -32,5 +36,72 @@ header {
         align-items: center;
       }
     }
+  }
+  .navbar-mobile {
+    @media (min-width: 1000px) {
+      display: none;
+    }
+    height: 122px;
+    padding: 10px 15px 10px 15px;
+    display: flex;
+    flex-direction: column;
+
+    .nav-top-row {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: auto;
+      margin-bottom: auto;
+
+      .nav-row-left{
+        display: flex;
+        flex-direction: row;
+
+        .nav-hamburger {
+          width: 20px;
+          height: 20px;
+          margin-top: auto;
+          margin-bottom: auto;
+          stroke-width: 2px;
+          stroke: white;
+          fill: white;
+        }
+  
+        .navbar-logo-container {
+          width: 25%;
+          padding-left: 15px;
+          
+          .navbar-logo {
+            height: 35px;
+            width: 95px;
+          }
+        }
+      }
+    }
+    .nav-middle-row {
+
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+
+    }
+    .nav-bottom-row {
+      height: 100%;
+      display: flex;
+
+    }
+  }
+  .navbar-mobile-open {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 0px;
+    
+  }
+  #navbar-mobile-close {
+    display: none;
   }
 }

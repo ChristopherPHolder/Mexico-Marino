@@ -8,6 +8,10 @@
   align-items: center;
   font-size: 15px;
 
+  @media (max-width: 1000px) {
+    display: none;
+  }
+
   .search-icon {
     height: 16px;
     width: 16px;

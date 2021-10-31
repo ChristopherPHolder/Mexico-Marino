@@ -4,11 +4,11 @@ import LoginIcon from '../../assets/svg/icon-circle-user.svg';
 
 import './login-button.styles.scss';
 
-const LoginButton = () => {
+const LoginButton = ({buttonText}) => {
   return (
     <div className='login-btn'>
       <LoginIcon className='login-icon'/>
-      <span> ACCESSO DE USUARIO </span>
+      <span>{buttonText}</span>
     </div>
   )
 };

@@ -9,7 +9,25 @@
   font-size: 15px;
 
   @media (max-width: 1000px) {
-    display: none;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $text-secondary-color;
+    font-weight: 600;
+    align-items: start;
+    padding: 20px 0 0 45px;
+
+    .navbar-link {
+      fill: $text-secondary-color;
+      stroke: $text-secondary-color;
+      
+      .search-icon {
+        fill: $text-secondary-color;
+        stroke: $text-secondary-color;
+      }
+    }
+
   }
 
   .search-icon {

@@ -5,13 +5,15 @@ import GeneralButton from '../general-button/general-button.component';
 import GeneralSearchBar from '../general-search-bar/general-search-bar.component';
 import LoginButton from '../login-button/login-button.component';
 import NavbarLinks from '../navbar-links/navbar-links.component';
+import NavDropdown from '../nav-dropdown/nav-dropdown.component';
 
 import Logo from '../../assets/svg/mexico-marino-logo.svg';
 import NavIcon from '../../assets/svg/icons8-menu.svg';
 
 import './navbar.styles.scss';
 
-const Navbar = () => {
+
+const Navbar = ({ navDropdownState, setNavDropdownState }) => {
   return (
     <header>
       <nav className='navbar-desktop'>
@@ -33,7 +35,7 @@ const Navbar = () => {
         <div className='nav-top-row'>
           <div className='nav-row-left'>
             <div className='nav-hamburger'>
-              <NavIcon />
+              <NavIcon onClick={() => setNavDropdownState(!navDropdownState)}/>
             </div>
             <div className='navbar-logo-container'>
               <Link to='/'>
@@ -59,6 +61,14 @@ const Navbar = () => {
           <GeneralSearchBar />
         </div>
       </nav>
+      {
+        navDropdownState &&
+        <NavDropdown 
+          navDropdownState={navDropdownState} 
+          setNavDropdownState={setNavDropdownState}
+        />
+      }
+      
     </header>
   )
 };

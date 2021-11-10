@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Seo from "../seo/seo.component";
 import Navbar from "../navbar/navbar.component";
@@ -7,10 +7,15 @@ import './layout.styles.scss';
 
 const Layout = ({ children }) => {
 
-return (
+  const [navDropdownState, setNavDropdownState] = useState(false)
+  
+  return (
     <div>
       <Seo/>
-      <Navbar />
+      <Navbar 
+        navDropdownState={navDropdownState} 
+        setNavDropdownState={setNavDropdownState}
+      />
       <main>
         {children}
       </main>

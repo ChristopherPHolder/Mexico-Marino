@@ -4,14 +4,14 @@ import HeroBanner from '../components/hero-banner/hero-banner.component';
 import FeaturedListings from '../components/featured-listings/featured-listings.component';
 
 import Layout from '../components/layout/layout.component';
-import FooterCarousel from '../components/footer-carousel/footer-carousel.component';
+import FooterBanner from '../components/footer-banner/footer-banner.component';
 
 const Home = () => {
   return (
     <Layout>
       <HeroBanner />
       <FeaturedListings />
-      <FooterCarousel />
+      <FooterBanner />
     </Layout>
   )
 }

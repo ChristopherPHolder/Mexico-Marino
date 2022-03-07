@@ -2,11 +2,10 @@ import React from 'react';
 
 import './featured-listings.styles.scss';
 
-import {listings} from './featured-listings.data.jsx'
+import {listings} from './featured-listings.data.jsx';
 
 const FeaturedListings = () => {
   return (
-    
     <section className='featured-listing-section'>
       <h3 className='featured-listing-title'>DESTACADOS</h3>
       <div className='featured-listings'>

@@ -6,12 +6,14 @@ import './general-footer.styles.scss';
 
 import Logo from '../../assets/svg/logo-redondo-amarillo.svg';
 
+const imgStyleRadius = 'border-radius: 10px; display: none;'
+
 const GeneralFooter = () => {
     return (
         <section className='general-footer'>
             <StaticImage 
-            src='../../assets/images/mexico_marino-bottom_cta-desktop-img.jpg' 
-            alt='test' className='cta-image'
+                src='../../assets/images/mexico_marino-bottom_cta-desktop-img.jpg' 
+                alt='test' imgClassName='cta-image' imgStyle={imgStyleRadius}
             />
 
             <div>
@@ -28,13 +30,13 @@ const GeneralFooter = () => {
                     </div>
                     <div className='footer-menu-section'>
                         <div><b>Menu</b></div>
-                        <Link to='/'className='nav-link'><div>Clima</div></Link>
+                        <a href='https://mexicomarino.com/clima/informacion' className='nav-link'><div>Clima</div></a>
                         <Link to='/'className='nav-link'><div>Distribudores</div></Link>
                         <Link to='/'className='nav-link'><div>Servicios</div></Link>
                     </div>
                     <div className='footer-menu-section'>
                         <div><b>Social</b></div>
-                        <Link to='/' className='nav-link'><div>Contacto</div></Link>
+                        <a href='https://mexicomarino.com/contacto' className='nav-link'><div>Contacto</div></a>
                     </div>
                 </nav>
             </div>

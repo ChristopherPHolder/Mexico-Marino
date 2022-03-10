@@ -1,8 +1,19 @@
-.footer-banner {
+.embla {
     width: 100%;
-    min-height: 300px;
-    max-width: 1400px;
     margin: auto;
-    background-color: aliceblue;
-    
+    max-width: 1400px;
+    overflow: hidden;
+  }
+.embla__container {
+    display: flex;
+}
+.embla__slide {
+    position: relative;
+    flex: 0 0 100%;
+}
+.embla__prev {
+    display: none;
+}
+.embla__next {
+    display: none;
 }

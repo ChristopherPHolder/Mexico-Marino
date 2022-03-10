@@ -11,13 +11,17 @@
     @media (max-width: 1000px) {
         padding: 10px;
     }
-    .cta-image-container{
-        overflow: hidden;
+    @media (max-width: 1000px) {
+        .cta-image-container {
+            display: none;
+        }
+
     }
     .cta-image {
         display: flex;
         justify-content: center;
         border-radius: 20px;
+
         @media (max-width: 1000px) {
             display: none;
         }
@@ -49,6 +53,7 @@
             flex-wrap: wrap;
 
             .footer-logo-section {
+                padding-bottom: 30px;
                 width: 100%;
                 display: flex;
                 justify-content: center;

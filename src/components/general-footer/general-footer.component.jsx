@@ -6,15 +6,15 @@ import './general-footer.styles.scss';
 
 import Logo from '../../assets/svg/logo-redondo-amarillo.svg';
 
-const imgStyleRadius = 'border-radius: 10px; display: none;'
-
 const GeneralFooter = () => {
     return (
         <section className='general-footer'>
-            <StaticImage 
-                src='../../assets/images/mexico_marino-bottom_cta-desktop-img.jpg' 
-                alt='test' imgClassName='cta-image' imgStyle={imgStyleRadius}
-            />
+            <div className='cta-image-container'>
+                <StaticImage 
+                    src='../../assets/images/mexico_marino-bottom_cta-desktop-img.jpg' 
+                    alt='test' imgClassName='cta-image' 
+                />
+            </div>
 
             <div>
                 <nav className='footer-menu'>

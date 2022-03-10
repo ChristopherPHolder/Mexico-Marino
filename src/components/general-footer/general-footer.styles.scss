@@ -11,8 +11,12 @@
     @media (max-width: 1000px) {
         padding: 10px;
     }
-    @media (max-width: 1000px) {
-        .cta-image-container {
+
+    .cta-image-container {
+        display: flex;
+        justify-content: space-around;
+
+        @media (max-width: 1000px) {
             display: none;
         }
 

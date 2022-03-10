@@ -8,8 +8,14 @@
   align-items: center;
   font-size: 15px;
 
+  .navbar-link {
+    color: $text-color;
+    text-decoration: none;
+  }
+
   @media (max-width: 1000px) {
-    height: 220px;
+    font-size: 15px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -19,6 +25,8 @@
     padding: 20px 0 0 45px;
 
     .navbar-link {
+      color: black;
+      text-decoration: none;
       fill: $text-secondary-color;
       stroke: $text-secondary-color;
       

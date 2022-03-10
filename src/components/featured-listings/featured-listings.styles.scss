@@ -4,7 +4,7 @@
   width: 100%;
   max-width: 1400px;
   margin: auto;
-
+  padding-bottom: 30px;
   .featured-listing-title {
     font-size: 24px;
     color: $text-color;
@@ -21,8 +21,12 @@
     max-width: 100%;
     padding: 30px;
 
-    @media screen {
-      
+    @media (max-width: 1000px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+      max-width: 100%;
+      padding: 15px;
     }
     .listing-card{
       background-color: white;

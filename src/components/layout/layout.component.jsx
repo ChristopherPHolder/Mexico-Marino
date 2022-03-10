@@ -4,6 +4,7 @@ import Seo from "../seo/seo.component";
 import Navbar from "../navbar/navbar.component";
 
 import './layout.styles.scss';
+import GeneralFooter from "../general-footer/general-footer.component";
 
 const Layout = ({ children }) => {
 
@@ -19,6 +20,7 @@ const Layout = ({ children }) => {
       <main>
         {children}
       </main>
+      <GeneralFooter />
     </div>
   )
 };

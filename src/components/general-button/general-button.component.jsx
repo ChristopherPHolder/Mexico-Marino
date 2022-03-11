@@ -10,7 +10,8 @@ const GeneralButton = ({ buttonText, colors, icon }) => {
       className={colors === 'secondary' ? 'secondary-btn' : 'general-btn'}
     >
       {icon === 'search-icon' ? <SearchIcon className='search-icon'/> : ''}
-      {buttonText}</div>
+      {buttonText}
+    </div>
   )
 };
 

@@ -1,8 +1,12 @@
 import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import './featured-listings.styles.scss';
 
 import {listings} from './featured-listings.data.jsx';
+import GeneralButton from '../general-button/general-button.component';
+
+
 
 const FeaturedListings = () => {
   return (
@@ -12,14 +16,19 @@ const FeaturedListings = () => {
         {listings.map((listing) => {
           return (
             <article className='listing-card' id={listing.id}>
-              <div className='card-image'>
-                Image
-              </div>
+              <StaticImage 
+                imgClassName='card-image' className='card-image-container'
+                aspectRatio={1/1} placeholder="tracedSVG"
+                src='../../assets/images/preview-embarcation/thumbnail-mexico_marino-d3d1636c.jpg'
+              />
               <div className='card-details'>
-                <spam>Price</spam>
-                <spam>{listing.year}</spam> | <spam>TYPE</spam>
+                <spam className='listing-price'>{listing.price}</spam><br/>
+                <spam>{listing.year}</spam> | <spam>{listing.type}</spam>
                 <br/>
-                <spam>Details</spam>
+                <spam>{listing.info}</spam>
+              </div>
+              <div className='listing-btn-container'>
+                <GeneralButton buttonText='Ver detalles'/>
               </div>
             </article>
             )

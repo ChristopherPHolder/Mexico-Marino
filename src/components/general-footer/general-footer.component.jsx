@@ -8,14 +8,13 @@ import Logo from '../../assets/svg/logo-redondo-amarillo.svg';
 
 const GeneralFooter = () => {
     return (
-        <section className='general-footer'>
+        <footer className='general-footer'>
             <div className='cta-image-container'>
                 <StaticImage 
                     src='../../assets/images/mexico_marino-bottom_cta-desktop-img.jpg' 
                     alt='test' imgClassName='cta-image' 
                 />
             </div>
-
             <div>
                 <nav className='footer-menu'>
                     <Link to='/' className='footer-logo-section'>
@@ -49,7 +48,7 @@ const GeneralFooter = () => {
                 <div>® Derechos reservados, 2022</div>
                 <div>Aviso de privacidad</div>
             </div>
-        </section>
+        </footer>
     )
 };
 
